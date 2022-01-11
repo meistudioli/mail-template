@@ -1,6 +1,6 @@
 {
   "name": "mail-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Suitable mail template for light / dark mode.",
   "main": "index.html",
   "scripts": {
