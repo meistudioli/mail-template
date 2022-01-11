@@ -41,7 +41,8 @@ html,body{font-family:system-ui,sans-serif;text-size-adjust:100%;-ms-text-size-a
 .body__h3{font-size:24px;font-weight:500;color:#26282a;line-height:1.3;}
 .body__h4{font-size:20px;font-weight:500;color:#26282a;line-height:1.3;}
 .body__p{font-size:16px;line-height:1.3;}
-.body_action_button{font-size:16px;color:#26282a;line-height:40px;width:180px;height:40px;border-radius:40px;background-color:#fcda19;display:block;margin:32px auto;text-align:center;}
+a.body__a{color:#3abfba;}
+a.body__action__button{font-size:16px;color:#26282a;line-height:40px;width:180px;height:40px;border-radius:40px;background-color:#fcda19;display:block;margin:32px auto;text-align:center;}
 
 .body__table{background-color:#f1f1f5;padding:16px;border-radius:16px;box-sizing:border-box;}
 .table__subject{width:30%;font-size:16px;display:inline-block;line-height:1.5;text-align:left;font-weight:500;}
@@ -58,7 +59,7 @@ html,body{font-family:system-ui,sans-serif;text-size-adjust:100%;-ms-text-size-a
 
 .body__help p{margin-top:8px;}
 .body__help__links{margin-top:32px;text-align:center;}
-.body__help__link{font-size:16px;color:#26282a;line-height:40px;width:120px;height:40px;border:1px solid #000;border-radius:40px;display:inline-block;text-align:center;}
+a.body__help__link{font-size:16px;color:#26282a;line-height:40px;width:120px;height:40px;border:1px solid #000;border-radius:40px;display:inline-block;text-align:center;}
 .body__help__link+.body__help__link{margin-left:16px;}
 
 .footer__badge{width:62px;display:block;margin:auto;}
@@ -85,7 +86,7 @@ html,body{font-family:system-ui,sans-serif;text-size-adjust:100%;-ms-text-size-a
   .body__table{background-color:#29282e;}
   .body__table__mention{background-color:#000;}
   .table__subject,.table__content{color:#999ca5;}
-  .body__help__link{border-color:#fff;color:#fff;}
+  a.body__help__link{border-color:#fff;color:#fff;}
   .footer__service__links a{color:#fff;}
   .body__p,.body__warn__li{color:#999ca5;}
 }
@@ -107,7 +108,8 @@ html,body{font-family:system-ui,sans-serif;text-size-adjust:100%;-ms-text-size-a
       恭喜你完成訂購
     </h3>
     <p class="body__p">待賣家出貨後，你將收到商品已到店通知，屆時請儘速於七日內完成取貨付款，以獲得好評價！若需查看本次所訂購的商品，請查看訂單。感謝使用Yahoo奇摩拍賣訂購商品！</p>
-    <a herf="?" class="body_action_button" title="立即查看訂單" aria-label="立即查看訂單">立即查看訂單</a>
+    
+    <a href="?" class="body__action__button" title="立即查看訂單" aria-label="立即查看訂單">立即查看訂單</a>
 
     <div class="body__table">
       <h3 class="body__table__h3">訂單資訊</h3>
@@ -142,7 +144,7 @@ html,body{font-family:system-ui,sans-serif;text-size-adjust:100%;-ms-text-size-a
       <ul class="body__warn__ul">
         <li class="body__warn__li">此信是系統代為發出，請勿回覆。</li>
         <li class="body__warn__li">若訂單中有競標商品，得標後必須要履行交易，若於30天內棄標5次，將取消拍賣下標資格。</li>
-        <li class="body__warn__li">若你尚未填寫商品規格或尺寸，可透過 <a href="?" title="即時通" aria-label="即時通">即時通</a> 與賣家聯繫。</li>
+        <li class="body__warn__li">若你尚未填寫商品規格或尺寸，可透過 <a href="?" class="body__a" title="即時通" aria-label="即時通">即時通</a> 與賣家聯繫。</li>
       </ul>
     </div>
 
