@@ -1,0 +1,25 @@
+{
+  "name": "mail-template",
+  "version": "1.0.0",
+  "description": "Suitable mail template for light / dark mode.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meistudioli/mail-template.git"
+  },
+  "keywords": [
+    "front-end",
+    "mail",
+    "template",
+    "dark mode"
+  ],
+  "author": "Paul Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meistudioli/mail-template/issues"
+  },
+  "homepage": "https://github.com/meistudioli/mail-template#readme"
+}
