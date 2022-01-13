@@ -88,7 +88,7 @@ function darkModeMail() {
   });
 }
 ```
-. 設定幾個主流目標：Apple Mail / Gmail / Yahoo Mail / Outlook 就好，不要囫圇吞棗什麼都要能支援，那只會搞死自己。
+8. 設定幾個主流目標：Apple Mail / Gmail / Yahoo Mail / Outlook 就好，不要囫圇吞棗什麼都要能支援，那只會搞死自己。
 
 ## Reference
 - [Dark Mode for email marketing: how to make your emails look great](https://www.simpleviewinc.com/blog/stories/post/dark-mode-for-email-marketing-how-to-make-your-emails-look-great/)
