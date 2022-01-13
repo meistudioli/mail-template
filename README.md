@@ -73,7 +73,10 @@ body {
 1. Logo 或者 hero image 儘量使用具備 alpha channel 的圖片（透明背景 PNG），自然在不同 mode 的切換·便能無縫的融入其中，如果 logo 有貼近深色背景的設置則建議加上 white border，讓它呈現時可以更加清晰。
 2. 顏色的使用上需要特別注意 Color Invert 後會不會造成很突兀的表現，比方說上圖可以看到黃色的膠囊按鈕，Color invert 後，便渲染出很詭異的按土黃色。所以在使用 color 時需要不斷的反覆進行調試，取得一個平衡值。
 3. tag selector 要注意是否在 mail client 的 legal list，避免被 filter 造成樣式丟失（比方說 h1 於 Gmail 中會被 filter）。Diver 不可恥，能 work 最重要。
-4. 由於測試上會反覆的寄發 email，最好有可以快速的調適 / 發送的 tool 來做，筆者建議使用 [Apps Script](https://script.google.com/home) 來進行發送。
+4. font-size 不傲期待繼承一事，儘可能在末梢 element 進行設置。也因為這樣，所以需要避免使用相對單位（em），因為我們不知道參照的對象內容是什麼。顏色方面的話除非是特意需要做加強的詞彙，不然儘量使用 #fff / #000，讓 APP 進行 color invert。
+5. 避免使用 shorthand 語法，比方說 `background: url(https://blog.lalacube.com/mei/img/yau/logo.png) no-repeat 0% 0%/auto 100%;`，這是因為大部分的 mail client 都會有個 legal list 去 trim mail content，避免 mail style 污染回 page container，所以有可能因為它認不得就把屬性給 trim 掉了，因此儘量把它拆解成各個對應的屬性來設置。
+6. 避免使用過於新穎的 CSS propertie，原因如上。
+7. 由於測試上會反覆的寄發 email，最好有可以快速的調適 / 發送的 tool 來做，筆者建議使用 [Apps Script](https://script.google.com/home) 來進行發送。
 ```
 function darkModeMail() {
   var htmlBody = HtmlService.createHtmlOutputFromFile('darkmode').getContent();
@@ -85,7 +88,7 @@ function darkModeMail() {
   });
 }
 ```
-5. 設定幾個主流目標：Apple Mail / Gmail / Yahoo Mail / Outlook 就好，不要囫圇吞棗什麼都要能支援，那只會搞死自己。
+. 設定幾個主流目標：Apple Mail / Gmail / Yahoo Mail / Outlook 就好，不要囫圇吞棗什麼都要能支援，那只會搞死自己。
 
 ## Reference
 - [Dark Mode for email marketing: how to make your emails look great](https://www.simpleviewinc.com/blog/stories/post/dark-mode-for-email-marketing-how-to-make-your-emails-look-great/)
